@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>materialized-css learning</title>
     <link rel="stylesheet" href="css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- <style>
         p{
             line-height: 40px;
@@ -21,7 +22,9 @@
     <h5>hello world</h5>
     <h6>hello world</h6>
 
-    <a class="btn btn-small" href="">button</a>
+    <a class="btn" href="">
+        <i class="material-icons">add</i>
+        add file</a>
     <a class="btn-large red darken-4" href="">button</a>
     <a class="btn black-text white" href="">button</a>
     <a class="btn-flat black-text blue" href="">button</a>
@@ -82,7 +85,9 @@
                 <div class="card green lighten-5">
                     <div class="card-image">
                         <img class="responsive-img" src="img/bentley.jpg" alt="">
-                        <a class="red darken-4 btn-floating halfway-fab" href=""></a>
+                        <a class="red darken-4 btn-floating halfway-fab" href="">
+                            <i class="material-icons">favorite</i>
+                        </a>
                     </div>
                     <div class="card-content">
                         <h4 class="green-text text-darken-4 card-title">Bentley</h4>
@@ -90,8 +95,18 @@
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque aperiam aliquid provident, quas sint dicta.</p>
                     </div>
                     <div class="card-action">
-                        <a class="green-text text-darken-4" href="">Add to Cart</a>
-                        <a class="green-text text-darken-4" href="">Details</a>
+                        <div class="row">
+                            <div class="col s6">
+                                <a class="green-text text-darken-4" href="">
+                                    <i class="material-icons medium">add_shopping_cart</i>
+                                </a>
+                            </div>
+                            <div class="col s6">
+                                <a class="green-text text-darken-4" href="">
+                                    <i class="material-icons medium">more</i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
