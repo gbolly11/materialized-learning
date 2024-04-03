@@ -50,15 +50,25 @@
         </ul>
     </div>
 
-
-
-
-
-
+    <div class="container">
+        <h1 class="orange-text text-darken-4">Modals</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et facilis voluptas perspiciatis velit sed, quo nam neque necessitatibus voluptatibus assumenda nemo. Impedit deleniti reprehenderit repudiandae eius! Quia hic omnis autem facilis quidem provident, laudantium officia repudiandae ducimus blanditiis ad eligendi ea eaque, fugiat perferendis atque. Temporibus sapiente quasi non voluptatum? <a class="modal-trigger" href="#learn">click to learn more</a></p>
+    </div>
+    <div class="modal" id="learn">
+        <div class="modal-content">
+            <img class="responsive-img" src="img/bentley.jpg" alt="">
+            <h3 class="orange-text text-darken-4">Hello there</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque recusandae maiores error natus minus nam officiis cum et aut labore?</p>
+        </div>
+        <div class="modal-footer">
+            <a class="modal-close btn orange darken-4 white-text" href="">continue</a>
+        </div>
+    </div>
     <script src="js/jquery.js"></script>
     <script src="js/materialize.js"></script>
     <script>
         $(document).ready(function(){
+        $('.modal').modal();
         });
     </script>
 </body>
