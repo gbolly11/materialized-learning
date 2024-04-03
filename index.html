@@ -6,12 +6,12 @@
     <title>materialized-css learning</title>
     <link rel="stylesheet" href="css/materialize.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- <style>
-        p{
-            line-height: 40px;
-            font-size: 25px;
+    <style>
+        .materialbox-caption {
+            font-size: 3%;
+            color: yellow; 
         }
-    </style> -->
+    </style>
 </head>
 <body>
     <h1 class="yellow-text text-darken-4 purple darken-4 center-align">Hello World</h1>
@@ -52,7 +52,7 @@
             <div class="col s12 m6 l4">
                 <div class="card">
                     <div class="card-image">
-                        <img class="responsive-img" src="img/alpine.jpg" alt="">
+                        <img class="responsive-img materialboxed" src="img/alpine.jpg" alt="" data-caption="Alpine">
                     </div>
                     <div class="card-content">
                         <h4 class="green-text text-darken-4">Alpine</h4>
@@ -68,7 +68,7 @@
             <div class="col s12 m6 l4">
                 <div class="card">
                     <div class="card-image">
-                        <img class="responsive-img" src="img/rezvani.jpg" alt="">
+                        <img class="responsive-img materialboxed" src="img/rezvani.jpg" alt="" data-caption="Rezvani">
                     </div>
                     <div class="card-content">
                         <h4 class="green-text text-darken-4">Rezvani</h4>
@@ -84,7 +84,7 @@
             <div class="col s12 m6 l4">
                 <div class="card green lighten-5">
                     <div class="card-image">
-                        <img class="responsive-img" src="img/bentley.jpg" alt="">
+                        <img class="responsive-img materialboxed" src="img/bentley.jpg" alt="" data-caption="Bentley">
                         <a class="red darken-4 btn-floating halfway-fab" href="">
                             <i class="material-icons">favorite</i>
                         </a>
@@ -118,10 +118,8 @@
     <script src="js/materialize.js"></script>
     <script>
         $(document).ready(function(){
-
+            $('.materialboxed').materialbox();
         });
-        
-
     </script>
 </body>
 </html>
