@@ -54,6 +54,7 @@
         <h1 class="orange-text text-darken-4">Modals</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et facilis voluptas perspiciatis velit sed, quo nam neque necessitatibus voluptatibus assumenda nemo. Impedit deleniti reprehenderit repudiandae eius! Quia hic omnis autem facilis quidem provident, laudantium officia repudiandae ducimus blanditiis ad eligendi ea eaque, fugiat perferendis atque. Temporibus sapiente quasi non voluptatum? <a class="modal-trigger" href="#learn">click to learn more</a></p>
     </div>
+
     <div class="modal" id="learn">
         <div class="modal-content">
             <img class="responsive-img" src="img/bentley.jpg" alt="">
@@ -64,12 +65,76 @@
             <a class="modal-close btn orange darken-4 white-text" href="">continue</a>
         </div>
     </div>
+    <div class="container">
+        <h1 class="green-text text-darken-4">Collapsible</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos nihil cupiditate alias iste, ratione, eaque explicabo repellat pariatur nesciunt sapiente veritatis consequuntur. Vitae eaque, facere accusamus enim quidem modi aspernatur, debitis ullam illum, tempora corporis voluptate aliquam? Reiciendis est, blanditiis cumque corrupti ratione, provident hic rerum fugiat reprehenderit iure beatae!</p>
+        <div class="row">
+            <div class="col s12 l4">
+                <ul class="collapsible popout">
+                    <li>
+                        <div class="collapsible-header green darken-4 white-text">
+                            <i class="material-icons">local_dining</i>
+                            <span>Egusi Soup</span>
+                        </div>
+                        <div class="collapsible-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas corporis aliquid fuga hic tempore accusamus numquam libero porro impedit! Assumenda, sint aut corporis voluptas ex impedit vero inventore placeat doloribus.</p>
+                        </div>
+                    </li>
+                    <li class="active">
+                        <div class="collapsible-header green darken-4 white-text">
+                            <i class="material-icons">local_dining</i>
+                            <span>Egusi Soup</span>
+                        </div>
+                        <div class="collapsible-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas corporis aliquid fuga hic tempore accusamus numquam libero porro impedit! Assumenda, sint aut corporis voluptas ex impedit vero inventore placeat doloribus.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header green darken-4 white-text">
+                            <i class="material-icons">local_dining</i>
+                            <span>Egusi Soup</span>
+                        </div>
+                        <div class="collapsible-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas corporis aliquid fuga hic tempore accusamus numquam libero porro impedit! Assumenda, sint aut corporis voluptas ex impedit vero inventore placeat doloribus.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col s12 l4">
+                <ul class="collapsible">
+                    <li>
+                        <div class="collapsible-header green darken-4 white-text">
+                            <i class="material-icons">local_dining</i>
+                            <span>Egusi Soup</span>
+                        </div>
+                        <div class="collapsible-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas corporis aliquid fuga hic tempore accusamus numquam libero porro impedit! Assumenda, sint aut corporis voluptas ex impedit vero inventore placeat doloribus.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col s12 l4">
+                <ul class="collapsible">
+                    <li>
+                        <div class="collapsible-header green darken-4 white-text">
+                            <i class="material-icons">local_dining</i>
+                            <span>Egusi Soup</span>
+                        </div>
+                        <div class="collapsible-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas corporis aliquid fuga hic tempore accusamus numquam libero porro impedit! Assumenda, sint aut corporis voluptas ex impedit vero inventore placeat doloribus.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <script src="js/jquery.js"></script>
     <script src="js/materialize.js"></script>
     <script>
         $(document).ready(function(){
         $('.modal').modal();
         });
+        $('.collapsible').collapsible();
     </script>
 </body>
 </html>
