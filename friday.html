@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/materialize.css">
+    <!-- font-awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- material-icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -71,6 +75,15 @@
         </div>
     </div>
 
+    <div class="container">
+        <h1>Tool Tips</h1>
+        <a href="" class="btn purple tooltipped" data-position="left" data-tooltip="click left">Left</a>
+        <a href="" class="btn red tooltipped" data-position="top" data-tooltip="click top">Top</a>
+        <a href="" class="btn blue tooltipped" data-position="bottom" data-tooltip="click bottom">Bottom</a>
+        <img src="img/alpine.jpg" alt="" class="responsive-img tooltipped" data-position="bottom" data-tooltip="click bottom">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis repudiandae deleniti necessitatibus eos ea itaque asperiores, modi, delectus consequatur doloremque possimus qui nemo id ab, accusantium dicta odit unde tempora vitae eligendi facere. Facere quod modi ut earum cum nobis? Quod nemo consequatur sed ipsa quam eveniet culpa laboriosam adipisci.</p>
+    </div>
+
 
 
     <script src="js/jquery.js"></script>
@@ -78,6 +91,7 @@
     <script>
         $(document).ready(function(){
         $('.tabs').tabs();
+        $('.tooltipped').tooltip();
         });
     </script>
 </body>
