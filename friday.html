@@ -33,5 +33,52 @@
             </div>
         </div>
     </div>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 l4">
+                <h1>Tabs</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque laudantium odit doloribus hic itaque, iure rem, quidem fugit repellat natus similique commodi fuga. Neque officiis aliquid necessitatibus provident iste harum, quos dignissimos fugiat alias tempore sapiente itaque quia eligendi tempora omnis ad, exercitationem, ea quis magni iusto totam deserunt aut?</p>
+            </div>
+            <div class="col s12 l6 push-l2">
+                <ul class="tabs">
+                    <li class="tab col s4">
+                        <a href="#bentley">Bentley</a>
+                    </li>
+                    <li class="tab  col s4">
+                        <a href="#rezvani">Rezvani</a>
+                    </li>
+                    <li class="tab  col s4">
+                        <a href="#alpine">Alpine</a>
+                    </li>
+                </ul>
+                <div id="bentley">Bentley
+                    <div>
+                        <img class="responsive-img" src="img/bentley.jpg" alt="">
+                        <p>Classic car</p>
+                    </div>
+                </div>
+                <div id="rezvani">Rezvani
+                    <div>
+                        <img class="responsive-img" src="img/rezvani.jpg" alt="">
+                        <p>Beauty!</p>
+                    </div>
+                </div>
+                <div id="alpine">Alpine
+                    <img class="responsive-img" src="img/alpine.jpg" alt="">
+                    <p>$1000000</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.js"></script>
+    <script>
+        $(document).ready(function(){
+        $('.tabs').tabs();
+        });
+    </script>
 </body>
 </html>
