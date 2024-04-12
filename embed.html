@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedding</title>
+    <link rel="stylesheet" href="css/materialize.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1 class="red-text text-darken-4">Embedding Resources</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nesciunt ullam magnam sequi, voluptatibus, at ipsum laboriosam reprehenderit minima praesentium laborum maxime ab dolorum earum accusamus. Distinctio tenetur iure praesentium, in cum aliquid eius. Expedita nesciunt veritatis vel delectus, tenetur perspiciatis quia illum laborum vitae rem ipsam, ipsum fugit ea? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore earum labore, obcaecati ducimus mollitia, excepturi, aperiam unde eos totam et quibusdam illo nulla nesciunt consectetur molestiae pariatur odit? Odio, earum!</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 l4">
+                <div class="card green darken-4">
+                    <div class="card-image">
+                        <div class="slider">
+                            <ul class="slides">
+                                <li><img class="responsive-img" src="img/alpine.jpg" alt=""></li>
+                                <li><img class="responsive-img" src="img/rezvani.jpg" alt=""></li>
+                                <li><img class="responsive-img" src="img/bentley.jpg" alt=""></li>
+                                <li><img class="responsive-img" src="img/bugatti.jpg" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-content white-text">
+                        <h4>Image Slider</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, sequi magnam! Totam deserunt exercitationem deleniti</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l4">
+                <div class="card red darken-4">
+                    <div class="card-image">
+                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/vcR8GfDWyJE?si=g7CbyoHyLFFgOA85" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-content white-text">
+                        <h4>Youtube Video</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, sequi magnam! Totam deserunt exercitationem deleniti</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l4">
+                <div class="card blue darken-4">
+                    <div class="card-image">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2017807.3951641934!2d4.123937229355287!3d8.96937633095776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0ba892c50a77%3A0x6f4a418fe7eca9de!2sDANISOFT%20INNOVATIVE%20SOLUTIONS%20LTD!5e0!3m2!1sen!2sng!4v1712918666566!5m2!1sen!2sng" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="card-content white-text">
+                        <h4>Google Maps</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, sequi magnam! Totam deserunt exercitationem deleniti</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+    <!-- javascript plugin -->
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.materialboxed').materialbox();
+            $('.slider').slider({
+                indicators: false,
+                height: 200,
+                duration: 5000
+            });
+        });
+    </script>
+</body>
+</html>

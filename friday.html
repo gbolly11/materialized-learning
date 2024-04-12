@@ -11,6 +11,46 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
+    <nav class="green darken-4">
+        <div class="container">
+            <a href="" class="brand-logo">logo</a>
+            <a href="#sidenav" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">Content</a>
+                </li>
+                <li>
+                    <a href="">Info</a>
+                </li>
+            </ul>
+            <ul class="sidenav" id="sidenav">
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">Content</a>
+                </li>
+                <li>
+                    <a href="">Info</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="slider">
+            <ul class="slides">
+                <li class="responsive-img"><img src="img/alpine.jpg" alt=""></li>
+                <li class="responsive-img"><img src="img/rezvani.jpg" alt=""></li>
+                <li class="responsive-img"><img src="img/bugatti.jpg" alt=""></li>
+                <li class="responsive-img"><img src="img/bentley.jpg" alt=""></li>
+            </ul>
+        </div>
+    </div>
     <div class="container">
         <div class="row">
             <div  class="col s12 m12 l6">
@@ -98,6 +138,13 @@
         $(document).ready(function(){
         $('.tabs').tabs();
         $('.tooltipped').tooltip();
+        $('.slider').slider({
+            indicators: false,
+            height: 200,
+            duration: 8000,
+            interval: 9200
+        });
+        $('.sidenav').sidenav();
         });
     </script>
 </body>
